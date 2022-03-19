@@ -4,7 +4,7 @@ int main()
 
 {
     int h,m,s;
-    int d=1000; //we add a delay of 1000 milliseconds and we will use it in the function sleep 
+    int d=1000; //We add a delay of 1000 milliseconds and we will use it in the function sleep 
     printf("Set time : \n");
     scanf("%d%d%d",&h,&m,&s);
     if (h>12 || m>60 || s>60)
@@ -12,7 +12,7 @@ int main()
         printf("ERROR ! \n");
         exit(0);
     }
-    while(1) // This is an infinite loop and anythig inside will repeat it selg to infinity 
+    while(1) // This is an infinite loop and anythig inside will repeat itself to infinity 
     {
         s++;
         if(s>59)
@@ -30,7 +30,7 @@ int main()
             h=1;
         }     
         printf("\n Clock :");
-        printf("|n %02d:%02d:%02d",h,m,s); // this write our time in this format 00:00:00
+        printf("|n %02d:%02d:%02d",h,m,s); // This write our time in this format 00:00:00
         sleep(d);
         system("cls");
         }
